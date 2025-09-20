@@ -1,0 +1,106 @@
+/* ------------------------------------ Paleta de Colores -------------------------------------------- */
+:root {
+    --blue: rgba(0, 0, 86, 0.8);
+    --black: rgba(0, 0, 25, 0.8);
+    --pink: rgba(202, 62, 209, 1);
+    --white: rgba(255, 255, 255, 1);
+    --azulito: rgba(62, 49, 109, 1);
+  }
+   
+  /* ------------------------------------------ Body Documentación -------------------------------------------- */
+  body {
+    background-color: var(--white);
+    color: var(--black);
+  }
+   
+  .back {
+    background-color: var(--azulito);
+  }
+   
+  /* --------------------------------------- Tipografía General ---------------------------------------- */
+  .tipografia-titulos, .tipografia-parrafos {
+    font-family: 'DM Serif Display', serif;
+    color: var(--white);
+  }
+   
+  .tipografia-parrafos {
+    font-family: 'Merriweather', serif;
+  }
+   
+  .colortipografia-otro {
+    background-color: var(--white);
+    color: var(--black);
+  }
+   
+  /* -------------------------------------------------- Navbar -----------------------------------------------------*/
+  .navbar {
+    background-color: var(--blue);
+  }
+   
+  .navbar .nav-link {
+    color: var(--white) !important;
+  }
+   
+  .navbar .nav-link:hover {
+    color: var(--pink) !important;
+  }
+   
+  /* ----------------------------------------------------- Header -------------------------------------------------*/
+  header {
+    background-color: var(--azulito);
+    color: var(--white);
+  }
+   
+  /* Cards */
+  .card {
+    border: none;
+  }
+   
+  .card-title {
+    color: var(--black);
+    font-weight: bold;
+  }
+   
+  .card-text {
+    color: var(--black);
+  }
+   
+  /*------------------------------------------------- Botones ----------------------------------------------------*/
+  .btn-doc {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--pink);
+    box-shadow: 2px 2px 5px var(--black);
+  }
+   
+  .btn-doc:hover {
+    background-color: var(--black);
+  }
+   
+  /*------------------------------------------------ Footer --------------------------------------------------------*/
+  footer {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+   
+  /*--------------------------------------------- Team Member ------------------------------------------------------*/
+  .team-member {
+    border: 1px solid var(--pink);
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+   
+  .team-member:hover {
+    transform: scale(1.05);
+  }
+   
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    header .header-text {
+      text-align: center;
+    }
+   
+    .team-member {
+      margin-bottom: 20px;
+    }
+  }

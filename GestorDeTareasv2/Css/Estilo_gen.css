@@ -1,0 +1,197 @@
+/* ------------------------------------ Paleta de Colores -------------------------------------------- */
+:root {
+    /* Colores primarios */
+    --blue: rgba(0, 0, 86, 0.8);
+    --black: rgba(0, 0, 25, 0.8);
+    --pink: rgba(202, 62, 209, 1);
+    --white: rgba(255, 255, 255, 1);
+    --azulito: rgba(62, 49, 109, 1);
+
+    /* Otros colores */
+    --amarillo: rgba(242, 255, 0, 0.803);
+    --rojo: rgba(163, 4, 38, 0.878);
+    --verde: rgba(0, 189, 19, 0.838);
+}
+
+/* ------------------------------------------ Body General -------------------------------------------- */
+body {
+    /* Fondo de página */
+    background: url('Img/FondoPrincipal.jpg') center center fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    overflow-y: auto;
+    position: relative;
+    top: 90px;
+}
+
+.main-content {
+    min-height: 100vh;
+    margin: 10px;
+}
+
+/* --------------------------------------- Tipografía General ---------------------------------------- */
+.tipografia-titulos,
+.tipografia-parrafos {
+    color: var(--white);
+}
+
+.tipografia-titulos {
+    font-family: 'DM Serif Display', serif;
+}
+
+.tipografia-parrafos {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+}
+
+/* -------------------------------------------- Navbar ------------------------------------------------- */
+.navbar {
+    /* Estilo de la barra de navegación */
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--blue);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 0;
+}
+
+/* Estilos de texto en la barra de navegación */
+.usuario,
+.rol {
+    color: var(--white);
+}
+
+.usuario {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.rol {
+    font-size: 16px;
+}
+
+/* ----------------------------------------- Botones Generales --------------------------------------------- */
+.logout-button,
+.help-button {
+    /* Botones de navegación */
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 15px;
+    margin: 3px;
+    background-color: var(--blue);
+    border: 2px solid var(--pink);
+    box-shadow: 2px 2px 5px var(--black);
+}
+
+.logout-button:hover,
+.help-button:hover {
+    background-color: var(--black);
+}
+
+/*-------------------------------------------- Estilo de tabla ------------------------------------------*/
+.table {
+    /* Configuración básica de la tabla */
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 0;
+}
+
+.table th,
+.table td {
+    /* Estilos de celdas */
+    color: var(--white);
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: var(--blue);
+}
+
+.table td {
+    background-color: var(--azulito);
+}
+
+.table tbody tr:hover {
+    background-color: var(--pink);
+}
+
+/* ------------------------------------ Estilos para botones de filtro y crear tarea --------------------------------- */
+.btn-secondary {
+    /* Botón de acción secundaria */
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--pink);
+    box-shadow: 2px 2px 5px var(--black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--black);
+}
+
+/* ----------------------------------------- Estilos de Tareas ------------------------------------------------- */
+.task-counter {
+    /* Contador de tareas */
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/*------------------------------ Estilos para las páginas de Ver Tarea y Tareas Completadas ------------------------------*/
+.fondo-especifico,
+.fondo-crear {
+    /* Fondo para secciones específicas */
+    background: url('Img/FondoPrincipal.jpg') center center fixed no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.fondo-crear {
+    position: relative;
+    top: 20px;
+}
+
+.card-crear {
+    background-color: var(--blue);
+}
+
+/* -------------------------------- Estilos de Inputs y Selects en Formularios -------------------------------- */
+.form-control,
+.form-select,
+textarea {
+    /* Estilos de formularios */
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+    border-color: var(--pink);
+    box-shadow: 0px 0px 5px var(--pink);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: var(--pink);
+    border-radius:50%;
+}
